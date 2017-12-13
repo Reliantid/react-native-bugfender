@@ -15,18 +15,10 @@ import java.util.List;
  */
 
 public class RNBugfenderPackage implements ReactPackage {
+
   @Override
   public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-    List<NativeModule> modules = new ArrayList<>();
-
-    modules.add(new RNBugfenderModule(reactContext));
-
-    return modules;
-  }
-
-  @Override
-  public List<Class<? extends JavaScriptModule>> createJSModules() {
-    return Collections.emptyList();
+    return Collections.<NativeModule>singletonList(new RNBugfenderModule(reactContext));
   }
 
   @Override
