@@ -6,12 +6,11 @@ sign up https://app.bugfender.com/signup
 
 ## Set up:
 
-1. react-native install react-native-bugfender
+1. `yarn add https://github.com/Reliantid/react-native-bugfender.git`
 
-2. add to `AppDelegate.m`
-```objective-c
-#import <BugfenderSDK/BugfenderSDK.h>
-```
+2. `react-native link react-native-bugfender`
+
+3. `pod install`
 
 Get an API key from the [Bugfender console](https://app.bugfender.com/)
 
